@@ -20,4 +20,19 @@ Update config.yaml with your actual bucket name, datafeeds, and Lambda functions
 Install dependencies: pip install -r requirements.txt
 Ensure AWS credentials are configured
 Run: python monitor.py
+
 The monitor will show a summary table plus detailed breakdowns for each datafeed, updating every 5 minutes by default.
+
+----
+e0be-0701bd-84
+1.what services are being used? s3, glue, lambda, ERM ...
+2.how datafeed organized? separate S3 prefixes, diff lambda func, tagged resources
+3.what cost dimension matter? 
+compute cost (lambda func, glue DPU hrs)
+storage (S3)
+data transfer cost
+other services
+4.
+5.what is your desired output?
+python scripts, dashboard, csv report, real time monitoring
+1.
