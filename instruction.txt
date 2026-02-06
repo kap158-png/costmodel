@@ -1,0 +1,23 @@
+Done! I've created a real-time cost monitoring solution for your ETL pipeline. Here's what you got:
+
+Structure:
+
+config.yaml - Configure your S3 bucket, datafeeds (by prefix), Lambda functions, and pricing
+cost_calculator.py - Core logic for calculating S3 and Lambda costs per datafeed
+monitor.py - Real-time dashboard that refreshes every 5 minutes
+requirements.txt - Python dependencies (boto3, pyyaml, tabulate)
+README.md - Complete setup and usage instructions
+Key Features:
+
+Tracks storage costs per S3 prefix
+Monitors Lambda invocations, duration, and compute costs
+Attributes costs to specific datafeeds
+Refreshes automatically with formatted tables
+No cost allocation tags needed
+Next Steps:
+
+Update config.yaml with your actual bucket name, datafeeds, and Lambda functions
+Install dependencies: pip install -r requirements.txt
+Ensure AWS credentials are configured
+Run: python monitor.py
+The monitor will show a summary table plus detailed breakdowns for each datafeed, updating every 5 minutes by default.
